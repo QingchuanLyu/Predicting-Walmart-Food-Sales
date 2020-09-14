@@ -13157,7 +13157,7 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Updates">Updates<a class="anchor-link" href="#Updates">&#182;</a></h3><p>---Used One-Hot Encoder in feature engineering, as Label Encoder assigns an abstract "order" to categorical features</p>
+<h3 id="Updates">Updates<a class="anchor-link" href="#Updates">&#182;</a></h3><p>---Used One-Hot Encoder in feature engineering, as Label Encoder assigned an abstract "order" to categorical features</p>
 
 </div>
 </div>
@@ -13250,8 +13250,8 @@ div#notebook {
 <span class="k">def</span> <span class="nf">encode_categorical</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">cols</span><span class="p">):</span>
     <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">cols</span><span class="p">:</span>
         <span class="n">not_null</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">notnull</span><span class="p">()]</span>
-        <span class="n">df</span><span class="p">[</span><span class="n">cole</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">not_null</span><span class="p">)</span>
-        <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">enc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">cole</span><span class="p">]),</span> <span class="n">index</span><span class="o">=</span><span class="n">not_null</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">not_null</span><span class="p">)</span>
+        <span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">enc</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">col</span><span class="p">]),</span> <span class="n">index</span><span class="o">=</span><span class="n">not_null</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
         
     <span class="k">return</span> <span class="n">df</span>
 
