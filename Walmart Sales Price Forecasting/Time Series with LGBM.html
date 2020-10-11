@@ -13474,8 +13474,6 @@ div#notebook {
         <span class="n">df</span><span class="p">[</span><span class="n">attr</span><span class="p">]</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">dt_col</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="p">,</span> <span class="n">attr</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">dtype</span><span class="p">)</span>
     <span class="c1">#additional time variables that require manipulation</span>
     <span class="n">df</span><span class="p">[</span><span class="s2">&quot;is_weekend&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;dayofweek&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int8</span><span class="p">)</span>
-    <span class="c1">#use 30 days as a month to recount day numbers, as 1941 days don&#39;t cover all the data</span>
-    <span class="n">df</span><span class="p">[</span><span class="s1">&#39;month_day&#39;</span><span class="p">]</span>  <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;month&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">30</span> <span class="o">+</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">df</span>
 </pre></div>
 
@@ -13645,8 +13643,7 @@ div#notebook {
     <span class="s2">&quot;week&quot;</span><span class="p">,</span>
     <span class="s2">&quot;day&quot;</span><span class="p">,</span>
     <span class="s2">&quot;dayofweek&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;is_weekend&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;month_day&quot;</span>
+    <span class="s2">&quot;is_weekend&quot;</span>
     <span class="p">]</span>
 </pre></div>
 
