@@ -1,4 +1,6 @@
-# Time-Series-Analysis
-Folder 1: Coding Homework for Empirical Econometrics shows how I recreated built-in functions from scratch for a graduate course. 
-
-Folder 2: Walmart Sales Prediction contains my Python code for time-series modeling, data investigation and modeling included. 
+## Walmart Sales Forecasting
+This project predicted daily sales for food categories at Walmart stores in California for the next with the input data (06/19/2015-06/19/2016) covered item ids, item sales, item prices, departments, product categories, store ids and holiday/speical events.
+* Clean and merge data
+* Investigate holiday impacts
+* Explore Trends by State/Category/Stores
+* Train Models
