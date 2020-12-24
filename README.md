@@ -1,4 +1,4 @@
 # Time-Series-Analysis
-Folder 1: Coding Homework for Empirical Econometrics contains my independent Matlab code written from scratch for a graduate course. They're short helper functions.
+Folder 1: Coding Homework for Empirical Econometrics shows how I recreated built-in functions from scratch for a graduate course. 
 
-Folder 2: Walmart Unit Sales Forecasting contains my Python code for time-series modeling. It's a five-fold LightGBM time-series model.
+Folder 2: Walmart Sales Prediction contains my Python code for time-series modeling, data investigation and modeling included. 
