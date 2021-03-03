@@ -3,4 +3,4 @@ This project predicted daily sales for food categories at Walmart stores in Cali
 * Clean and merge data
 * Investigate holiday impacts
 * Explore Trends by State/Category/Stores
-* Train Models
+* Train Models: ARIMA, Decision Tree, Random Forest, Gradient Boosting Tree
