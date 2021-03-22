@@ -4,3 +4,5 @@ This project predicted daily sales for food categories at Walmart stores in Cali
 * Investigate holiday impacts
 * Explore Trends by State/Category/Stores
 * Train Models: ARIMA, Decision Tree, Random Forest, Gradient Boosting Tree
+
+Reflective essay: https://qingchuanlyu.medium.com/redoing-projects-part-ii-time-series-sales-b7a2f277e268
